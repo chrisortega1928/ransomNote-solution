@@ -1,0 +1,9 @@
+﻿Christopher Ortega
+
+
+Algorithm:
+
+
+1. A constraint introduced in the problem is that each letter in the magazine string can only be used once in ransomNote. Therefore, we would need to build an array that iterates over and accounts for each character’s frequency in the magazine string.
+2. Now we would need to iterate over the ransomNote string, whereby an occurrence of a character from that string would subtract from the frequency of occurrence in the array built from the magazine string. If the value resulting from the subtraction goes below 0, then that means there are not enough characters from the magazine string to cover the frequency of characters within the ransomNote string. Then, the program would return false. 
+3. Otherwise, the program returns true if throughout the iteration, every character in the ransomNote string is present in the magazine string while also not going below the value of 0.
